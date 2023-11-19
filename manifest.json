@@ -1,19 +1,11 @@
 {
-    "manifest_version": 2,
-    "name": "ChatBot Extension",
-    "version": "1.0",
-    "description": "A chatbot extension",
-    "permissions": [
-      "activeTab"
-    ],
-    "background": {
-      "scripts": [
-        "background.js"
-      ]
-    },
-    "browser_action": {
-      "default_popup": "popup.html",
-      "default_title": "ChatBot Extension"
-    }
+  "manifest_version": 2,
+  "name": "Chatbot Extension",
+  "version": "1.0",
+  "description": "A simple Chrome extension to interact with a chatbot",
+  "permissions": ["activeTab"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Chatbot"
   }
-  
+}

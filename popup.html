@@ -1,38 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>ChatBot Extension</title>
-        <style>
-          body {
-            width: 300px;
-            padding: 10px;
-          }
-          #conversation {
-            height: 200px;
-            overflow: auto;
-            border: 1px solid #ccc;
-            padding: 10px;
-          }
-          #user-input {
-            margin-top: 10px;
-            width: 100%;
-            padding: 5px;
-          }
-          #submit-button {
-            margin-top: 10px;
-            width: 100%;
-            padding: 5px;
-          }
-        </style>
-      </head>
-      <body>
-        <div id="conversation">
-          <p>User: Hello, bot!</p>
-          <p>Bot: Hi, how can I assist you today?</p>
-        </div>
-        <input id="user-input" type="text" placeholder="Enter your message">
-        <button id="submit-button">Send</button>
-        <script src="popup.js"></script>
-      </body>
+<html>
+  <head>
+    <title>Chatbot Extension</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div id="chat-container">
+      <div id="messages"></div>
+      <input type="text" id="user-input" placeholder="Type your message..." />
+      <button id="send-button">Send</button>
+    </div>
+    <script src="popup.js"></script>
+  </body>
 </html>
